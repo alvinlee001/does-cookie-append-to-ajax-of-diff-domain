@@ -21,7 +21,9 @@
             this.responseText;
         }
       };
+      xhttp.withCredentials = true;
       xhttp.open("GET", "http://loadbalancer-1867794632.ap-southeast-1.elb.amazonaws.com/test/endpoint", true);
+      xhttp.setRequestHeader('Cookie','JSESSIONID=4E9D8142F80F893FC0157817B7DE544C');
       xhttp.send();
     }
   </script>
